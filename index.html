@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Budget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="headerBar">
+    <header>
+      <h1 class="title"> Budget Manager</h1>
+      <h2 class="topbar">Your Current Balance</h2>
+      <p>
+        <span class="currency">₹</span>
+        <span class="balance"></span>
+      </p>
+      <header>
+  </div>
+  <div class="content">
+    <h3 class="secondTitle">Add a new transaction: </h3>
+    <form id="expForm">
+      <label for="type">Type:</label>
+      <select id="type" name="type">
+        <option value="income">Income</option>
+        <option value="expenses">Expenses</option>
+      </select>
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="category" placeholder="Enter category">
+
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" name="amount" placeholder="Enter amount">
+
+
+      <button type="submit" class="buttonSave">Add to transactions</button>
+    </form>
+
+  </div>
+  <div class="content">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Category</th>
+          <th>Amount</th>
+          <th>Options</th>
+        </tr>
+      </thead>
+      <tbody id="transactionTable"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
